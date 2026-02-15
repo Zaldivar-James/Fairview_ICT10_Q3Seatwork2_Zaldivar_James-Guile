@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.1.1/core.css" />   
+    <script type="module" src="https://pyscript.net/releases/2026.1.1/core.js"></script>
+    <style>
+        .container{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: white;
+        padding: 200px;
+        max-width: 500px;
+        border: 5px solid;
+        box-shadow: 10px;
+        border-radius: 20px;
+        background-color: white;
+        }
+        h1{
+          text-align: center;  
+        }
+        select{
+        padding: 10px;
+        width: 500px;
+        border: 1px solid;
+        border-radius: 20px;
+        }
+        h3{
+            text-align: center;
+        }
+        button{
+        padding: 10px;
+        width: 500px;
+        border: 1px solid;
+        border-radius: 20px;
+        color: black;
+        background-color: rgb(red, green, blue);
+        }
+    </style>
+    <title>Seatwork 2</title>
+</head>
+<body>
+    <div class="container">
+    <h1>Intrams Checker</h1>
+    <h3>Are you done with the online registration?</h3>
+        <input type="radio" id="yes_reg" name="registration" value="True">
+            <label for="1">Yes</label>
+        <input type="radio" id="not_registered" name="registration" value="False">
+            <label for="2">No</label>
+
+    <h3>Do you have a medical clearance from the clinic?</h3>
+        <input type="radio" id="yes_med" name="medical_certificate" value="True">
+            <label for="3">Yes</label>
+        <input type="radio" id="no_med" name="medical_certificate" value="False">
+            <label for="4">No</label>
+
+    <h3>What's your Grade & Section?</h3>
+        <label for="grade_level"></label>
+        <select id="grade_level">
+    <option value="7">Grade 7</option>
+    <option value="8">Grade 8</option>
+    <option value="9">Grade 9</option>
+    <option value="10">Grade 10</option>
+        <br>
+
+        <select>
+        <label for="section"></label>
+            <select id="section">
+            <option value="emerald">Emerald</option>
+            <option value="ruby">Ruby</option>
+            <option value="sapphire">Sapphire</option>
+            <option value="topaz">Topaz</option>
+            <option value="jade">Jade</option>
+        </select>
+       
+         <button py-click="sign_up">Sign Up</button></div>
+
+        <br>
+
+         <div class="container">
+        <div class="card-body">
+            <p id="team-output"></p>
+        </div>
+    </div>
+         <script type="py" src="main.py"></script>
+</body>
+</html>
